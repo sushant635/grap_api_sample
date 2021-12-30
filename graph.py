@@ -118,25 +118,13 @@ if 'access_token' in result:
     # create_users = requests.post('https://graph.microsoft.com/v1.0/users', headers=headers,data=par)
     # print(create_users.json())
 
-    #b = {"accountEnabled":"false"}
-    #body = json.dumps(b)
-    # update = requests.get('https://graph.microsoft.com/v1.0/users', headers=headers)
-    # update.raise_for_status()
-    # print(update.json())
+    
 
     
   # period_value = "D30"
     update = requests.get("https://graph.microsoft.com/v1.0/reports/getOffice365ActiveUserDetail(period='D30')", headers=headers)
     boday = update.status_code
     data = update.text
-    print(data)
-    print(update.ok)
-    print(update.headers['content-type'])
-    print(type(data),type(update))
-    
-
-    # print(update.json())
-    #print(boday)
     if update.status_code == 200:
         filePath = 'sharepoint.csv'
         with open(filePath, "wb") as f: 
