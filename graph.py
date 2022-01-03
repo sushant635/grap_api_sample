@@ -18,13 +18,22 @@ authcookie = Office365(sharepoint_url,username=username, password=password).GetC
 site = Site(sharepoint_site,version=Version.v365,authcookie=authcookie)
 folder = site.Folder('Shared Documents/usage')
 
-TENANT_ID = '5418abcf-d755-44c2-9ed7-7aac942abee7'
-CLIENT_ID = '1f6f3d25-faf1-4870-b319-5797b2552ca9'
-CLIENT_SECRET = 'qpH7Q~v.UUdB.PDxR8TFI0PznYUHSkKk2r8fO'
+# TENANT_ID = '5418abcf-d755-44c2-9ed7-7aac942abee7'
+# CLIENT_ID = '1f6f3d25-faf1-4870-b319-5797b2552ca9'
+# CLIENT_SECRET = 'qpH7Q~v.UUdB.PDxR8TFI0PznYUHSkKk2r8fO'
 
-# TENANT_ID = 'fd0c8920-9100-4b4d-9013-4eabd6baa482'
-# CLIENT_ID = 'ae343709-5a36-4635-8bb6-036888bad492'
-# CLIENT_SECRET = 'srN7Q~hHqbPXp0_R4kYenZlwiqfO-FIhD3VV'
+
+
+TENANT_ID = 'fd0c8920-9100-4b4d-9013-4eabd6baa482'
+CLIENT_ID = '40bcf090-8cb0-4998-bf24-50bdd79f7946'
+CLIENT_SECRET = '06a88177-220d-4e40-8ce5-442986aedc55'
+
+#clicnt id = 40bcf090-8cb0-4998-bf24-50bdd79f7946
+#tenant_id = fd0c8920-9100-4b4d-9013-4eabd6baa482
+#secet = 06a88177-220d-4e40-8ce5-442986aedc55
+#06a88177-220d-4e40-8ce5-442986aedc55
+
+
 
 AUTHORITY = "https://login.microsoftonline.com/"+TENANT_ID
 
