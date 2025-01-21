@@ -9,18 +9,18 @@ from shareplum import Site,Office365
 from shareplum.site import Version
 
 
-username = 'sushantshinde@orientindia.net'
-password = 'Dilip@123'
-sharepoint_url = 'https://orienttechnologies.sharepoint.com'
-sharepoint_site = 'https://orienttechnologies.sharepoint.com/sites/sushant_ETL'
-sharepoint_doc = 'https://orienttechnologies.sharepoint.com/:x:/s/QuikHr/EamixkIFFFBPi9m_QrWJrZEB7CqltE1eYw1Cj6sEe99Mcw?e=H6ujJW'
+username = '-'
+password = '-'
+sharepoint_url = '-'
+sharepoint_site = '-'
+sharepoint_doc = '-'
 authcookie = Office365(sharepoint_url,username=username, password=password).GetCookies()
 site = Site(sharepoint_site,version=Version.v365,authcookie=authcookie)
 folder = site.Folder('Shared Documents/usage')
 
-TENANT_ID = '5418abcf-d755-44c2-9ed7-7aac942abee7'
-CLIENT_ID = '1f6f3d25-faf1-4870-b319-5797b2552ca9'
-CLIENT_SECRET = 'qpH7Q~v.UUdB.PDxR8TFI0PznYUHSkKk2r8fO'
+TENANT_ID = '-'
+CLIENT_ID = '-'
+CLIENT_SECRET = '-'
 
 # TENANT_ID = 'fd0c8920-9100-4b4d-9013-4eabd6baa482'
 # CLIENT_ID = 'ae343709-5a36-4635-8bb6-036888bad492'
